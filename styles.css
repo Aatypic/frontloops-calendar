@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #64a3cc;
+    font-family: 'Roboto';
+    align-items: center;
+    display: flex;
+    font-weight: 700;
+}
+
+.container {
+    background-color: white;
+    width: max-content;
+    margin: auto;
+}
+
+hr {
+    border-top: 2px solid grey;
+    opacity: 0.4;
+}
+
+header,
+main,
+footer {
+    padding: 1.5em;
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em;
+}
+
+tr {
+    height: 50px;
+}
+
+th,
+td {
+    width: 50px;
+    text-align: center;
+    position: relative;
+}
+
+td,
+.plus {
+    cursor: pointer;
+}
+
+header p,
+th {
+    color: grey;
+    font-weight: 500;
+}
+
+th {
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.previous-month {
+    opacity: 0.3;
+}
+
+.today {
+    background: rgb(231, 113, 16);
+    border-radius: 50%;
+    color: white;
+}
+
+
+.important,
+.plus {
+    border: 2px rgb(231, 113, 16) solid;
+    border-radius: 50%;
+}
+
+.sup {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    z-index: 2;
+    width: 22px;
+    height: 22px;
+    color: white;
+    text-align: center;
+    ;
+    line-height: 22px;
+}
+
+.important .sup {
+    background-color: rgb(231, 113, 16);
+    border-radius: 50%;
+}
+
+.less-important .sup {
+    background-color: purple;
+    border-radius: 50%;
+}
+
+
+.less-important {
+    border: 2px solid purple;
+    border-radius: 50%;
+}
+
+footer {
+    align-items: center;
+}
+
+.plus {
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+}
+
+.plus:hover {
+    background-color: rgb(231, 113, 16);
+    color: white;
+}
